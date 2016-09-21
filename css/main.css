@@ -1,0 +1,155 @@
+/* Search Box Styling */
+
+input[name="search"] {
+  display: block;
+  margin: 50px auto;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  width: 460px;
+  font-size: 16px;
+  box-sizing: border-box;
+  /*background-color: #ccc;*/
+}
+input[name="search"]:focus {
+
+}
+
+
+/* Gallery Grid */
+
+
+#container {
+  padding-left: 5.8px;
+  display: block;
+  margin: 0 auto;
+  width: 980px;
+  font-size: 0;
+  text-align: justify;
+
+}
+
+
+
+#container .mix,
+#container .gap {
+  display: inline-block;
+  margin-bottom: 55px;
+  width: 21%;
+
+}
+
+#container:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+#container .mix {
+  text-align: left;
+  background: white;
+  /*background: #03899c;*/
+  /*margin-bottom: 2%;*/
+  display: none;
+}
+
+#container .mix:before{
+  content: '';
+  display: inline-block;
+  padding-top: 60%;
+}
+
+/* Gallery overlay */
+
+
+
+
+/*@media all and (min-width: 420px){*/
+  /*#container .mix,*/
+  /*#container .gap{*/
+    /*width: 49%;*/
+  /*}*/
+/*}*/
+/*@media all and (min-width: 640px){*/
+  /*#container .mix,*/
+  /*#container .gap{*/
+    /*width: 21%;*/
+  /*}*/
+/*}*/
+
+/* Filter Button Styling*/
+
+body, button{
+  font-family: 'Helvetica Neue', arial, sans-serif;
+}
+
+.controls{
+  padding: 2%;
+  background: #333;
+  color: #eee;
+}
+
+label{
+  font-weight: 300;
+  margin: 0 .4em 0 0;
+}
+
+button{
+  display: inline-block;
+  padding: .4em .8em;
+  background: #666;
+  border: 0;
+  color: #ddd;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.active{
+  background: #68b8c4;
+}
+
+button:focus{
+  outline: 0 none;
+}
+
+button + label{
+  margin-left: 1em;
+}
+
+/* lightbox styling*/
+
+.fancybox-title-outside-wrap {
+  display: block;
+  font-family: monospace;
+  line-height: 1.5;
+  font-size: 16px;
+  max-width: 600px;
+  margin: 80px auto 0;
+}
+
+.fancybox-nav {
+    width: 60px;
+}
+
+.fancybox-nav span {
+    visibility: visible;
+    opacity: 0.5;
+}
+
+.fancybox-nav:hover span {
+    opacity: 1;
+}
+
+.fancybox-next {
+    right: -60px;
+}
+
+.fancybox-prev {
+    left: -60px;
+}
+
+/*.fancybox-next span, .fancybox-prev span {*/
+   /*visibility: visible;*/
+/*}​*/
