@@ -9,11 +9,8 @@ input[name="search"] {
   width: 460px;
   font-size: 16px;
   box-sizing: border-box;
-  /*background-color: #ccc;*/
 }
-input[name="search"]:focus {
 
-}
 
 
 /* Gallery Grid */
@@ -24,7 +21,6 @@ input[name="search"]:focus {
   display: block;
   margin: 0 auto;
   width: 980px;
-  font-size: 0;
   text-align: justify;
 
 }
@@ -48,9 +44,8 @@ input[name="search"]:focus {
 #container .mix {
   text-align: left;
   background: white;
-  /*background: #03899c;*/
-  /*margin-bottom: 2%;*/
   display: none;
+  position: relative;
 }
 
 #container .mix:before{
@@ -62,22 +57,27 @@ input[name="search"]:focus {
 /* Gallery overlay */
 
 
+#container .title {
+  position: absolute;
+  top: 0;
+  left: 4.5px;
+  height: 35px;
+  width:200px;
+  background: rgba(55, 182, 201, 0.8);
+  color: white;
+  font-size: 20px;
+  display:inline;
+
+}
+
+.title p {
+  margin: 4px 10px;
+  font-family: 'Helvetica Neue', arial, sans-serif;
+  font-weight: 300;
+
+}
 
 
-/*@media all and (min-width: 420px){*/
-  /*#container .mix,*/
-  /*#container .gap{*/
-    /*width: 49%;*/
-  /*}*/
-/*}*/
-/*@media all and (min-width: 640px){*/
-  /*#container .mix,*/
-  /*#container .gap{*/
-    /*width: 21%;*/
-  /*}*/
-/*}*/
-
-/* Filter Button Styling*/
 
 body, button{
   font-family: 'Helvetica Neue', arial, sans-serif;
@@ -149,7 +149,3 @@ button + label{
 .fancybox-prev {
     left: -60px;
 }
-
-/*.fancybox-next span, .fancybox-prev span {*/
-   /*visibility: visible;*/
-/*}​*/
